@@ -11,53 +11,50 @@
 
                         <div class="flex-row w-full text-xs md:flex md:space-x-4">
 							<div class="w-full mb-3 space-y-2 text-xs">
-								<label class="py-2 font-semibold text-gray-600">Company  Name <abbr title="required">*</abbr></label>
-								<input placeholder="Company Name" class="block w-full h-10 px-4 border rounded-lg appearance-none bg-grey-lighter text-grey-darker border-grey-lighter" required="required" type="text" name="integration[shop_name]" id="integration_shop_name">
-								<p class="hidden text-xs text-red">Please fill out this field.</p>
+								<label class="py-2 font-semibold text-gray-600">Estado <abbr title="required">*</abbr></label>
+								<input placeholder="Company Name" class="block w-full h-10 px-4 border rounded-lg appearance-none bg-grey-lighter text-grey-darker border-grey-lighter" required="required" type="text" name="integration[shop_name]" id="estado" wire:model="estado">
+								<p class="hidden text-xs text-red">En que estado se encuentra</p>
 							</div>
 							<div class="w-full mb-3 space-y-2 text-xs">
-								<label class="py-2 font-semibold text-gray-600">Company  Mail <abbr title="required">*</abbr></label>
-								<input placeholder="Email ID" class="block w-full h-10 px-4 border rounded-lg appearance-none bg-grey-lighter text-grey-darker border-grey-lighter" required="required" type="text" name="integration[shop_name]" id="integration_shop_name">
-								<p class="hidden text-xs text-red">Please fill out this field.</p>
+								<label class="py-2 font-semibold text-gray-600">Fecha intervencion <abbr title="required">*</abbr></label>
+								<input type="date" placeholder="Email ID" class="block w-full h-10 px-4 border rounded-lg appearance-none bg-grey-lighter text-grey-darker border-grey-lighter" required="required"  name="integration[shop_name]" id="fecha" wire:model="fecha">
+								{{-- <p class="hidden text-xs text-red">Please fill out this field.</p> --}}
 							</div>
 						</div>
 
                         <div class="mb-4">
-                            <label for="estado" class="block mb-2 text-sm font-bold text-gray-700" style="text-align: right">Estado</label>
-                            <input type="text" class="w-full px-3 leading-tight text-gray-700 border rounded shadow appearance-none py-z focus:shadow-outline" id="estado" wire:model="infraciones">
+                            <label for="nombreEstablecimiento" class="block mb-2 text-sm font-bold text-gray-700" style="text-align: left">Nombre de nombreEstablecimiento</label>
+                            <input placeholder="Digite el nombre el establecimiento" type="text" class="w-full px-3 leading-tight text-gray-700 border rounded shadow appearance-none py-z focus:shadow-outline" id="nombreEstablecimiento" wire:model="nombreEstablecimiento">
+                            {{-- <p class="hidden text-xs text-red">Digite el nombre el establecimiento</p> --}}
 
                         </div>
                         <div class="mb-4">
-                            <label for="estado" class="block mb-2 text-sm font-bold text-gray-700">Numero De Acta</label>
-                            <input type="text" class="w-full px-3 leading-tight text-gray-700 border rounded shadow appearance-none py-z focus:shadow-outline" id="estado" wire:model="infraciones">
+                            <label for="direccion" class="block mb-2 text-sm font-bold text-gray-700" style="text-align: left">Direccion</label>
+                            <input placeholder="digite la Direccion" type="text" class="w-full px-3 leading-tight text-gray-700 border rounded shadow appearance-none py-z focus:shadow-outline" id="direccion" wire:model="direccion">
+                            <p class="hidden text-xs text-red">Digite la direccion</p>
 
                         </div>
                         <div class="mb-4">
-                            <label for="estado" class="block mb-2 text-sm font-bold text-gray-700">Fecha de intervencion</label>
-                            <input type="date" class="w-full px-3 leading-tight text-gray-700 border rounded shadow appearance-none py-z focus:shadow-outline" id="estado" wire:model="infraciones">
+                            <label for="actaComiso" class="block mb-2 text-sm font-bold text-gray-700" style="text-align: left">Acta Comiso</label>
+                            <input placeholder="digite el acta de comiso" type="text" class="w-full px-3 leading-tight text-gray-700 border rounded shadow appearance-none py-z focus:shadow-outline" id="actaComiso" wire:model="actaComiso">
 
                         </div>
                         <div class="mb-4">
-                            <label for="estado" class="block mb-2 text-sm font-bold text-gray-700">Nombre del local</label>
-                            <input type="text" class="w-full px-3 leading-tight text-gray-700 border rounded shadow appearance-none py-z focus:shadow-outline" id="estado" wire:model="infraciones">
+                            <label for="informeF" class="block mb-2 text-sm font-bold text-gray-700" style="text-align: left">Informe Fiscalizacion</label>
+                            <input placeholder="digite el informe de Fiscalizacion" type="text" class="w-full px-3 leading-tight text-gray-700 border rounded shadow appearance-none py-z focus:shadow-outline" id="informeF" wire:model="informeF">
 
                         </div>
                         <div class="mb-4">
-                            <label for="estado" class="block mb-2 text-sm font-bold text-gray-700">Acta de Decomiso</label>
-                            <input type="text" class="w-full px-3 leading-tight text-gray-700 border rounded shadow appearance-none py-z focus:shadow-outline" id="estado" wire:model="infraciones">
+                            <label for="fechaFisc" class="block mb-2 text-sm font-bold text-gray-700" style="text-align: left">Fecha de Fiscalizacion</label>
+                            <input type="date" placeholder="digite la fecha de fiscalizacino" type="text" class="w-full px-3 leading-tight text-gray-700 border rounded shadow appearance-none py-z focus:shadow-outline" id="fechaFisc" wire:model="fechaFisc">
 
                         </div>
                         <div class="mb-4">
-                            <label for="estado" class="block mb-2 text-sm font-bold text-gray-700">Informe de Fiscal</label>
-                            <input type="text" class="w-full px-3 leading-tight text-gray-700 border rounded shadow appearance-none py-z focus:shadow-outline" id="estado" wire:model="infraciones">
+                            <label for="observacion" class="block mb-2 text-sm font-bold text-gray-700" style="text-align: left">observacion</label>
+                            <input placeholder="digite la observacion si la hay" type="text" class="w-full px-3 leading-tight text-gray-700 border rounded shadow appearance-none py-z focus:shadow-outline" id="observacion" wire:model="observacion">
 
                         </div>
                 
-                        <div class="mb-4">
-                            <label for="fecha" class="block mb-2 text-sm font-bold text-gray-700">observacion</label>
-                            <input type="text" class="w-full px-3 leading-tight text-gray-700 border rounded shadow appearance-none py-z focus:shadow-outline" id="estado" wire:model="fecha">
-                        </div>
-                        
                         <div class="px-4 bg-gray-50 sm:px-6 sm:flex sm:flex-row-reverse">
                             <span class="flex w-full rounded-md shadow-sm sm:ml-3 sm:w-auto">
                                 <button wire:click.prevent = "guardar()" type= "button" class="px-5 py-3 text-sm font-medium tracking-wider text-gray-100 bg-gray-600 border rounded-full shadow-sm hover:shadow-lg hover:bg-gray-700">Guardar</button>
